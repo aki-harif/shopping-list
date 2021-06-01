@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section{
+  background: linear-gradient(330deg, #3A3235, #92433c, #DF5826, #DFDFDF);
+  width:100%;
+  height: 720px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container{
+   background: linear-gradient(90deg, #3A3235, #DF4126);
+  position: absolute;
+  width: 60%;
+  border-radius: 1rem;
+  max-height: 500px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddList{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: .5rem auto;
+}
+.AddList input{
+  width: 90%;
+  border-radius: .3rem;
+  border:none;
+  height: 1.8rem;
+  background-color: rgb(245, 196, 180); ;
+}
+.AddList input::placeholder{
+  margin: 2rem;
+  justify-content: center;
+
+}
+.CheckBox{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  /* border-bottom: 1px solid #fff; */
+}
+.Uncompleted{
+  margin-left: .5rem;
+  display: flex;
+  color: #fff;
+  font-size: 1.3rem;
+  
+}
+.CheckBox span input {
+  margin-right: .6rem;
+  border: 1rem solid red;
 }
 
-.App-link {
-  color: #61dafb;
+.Completed{
+  text-decoration: line-through;
+  margin-left: .5rem;
+  display: flex;
+  color: #92433c;
+  font-size: 1.3rem;
+}
+.Add-botton{
+  color: rgb(190, 65, 16);
+  position: absolute;
+  font-size: 1.5rem;
+  right: 4rem;
+  top: .4rem;
+  cursor: pointer;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Countcounainer{
+display: flex;
+background-color: #fff;
+margin-right: .5rem;
+width: 3.5rem;
+height: auto;
+border-radius: 1rem;
+justify-content:space-around;
+font-size: 1.3rem;
+
+}
+.left-chevron{
+  cursor: pointer;
+    color: rgb(190, 65, 16);
+
+}
+.right-chevron{
+  cursor: pointer;
+    color: rgb(190, 65, 16);
+
+}
+.TotalCount{
+  justify-content: end;
+  display: flex;
+  margin: .5rem .5rem;
+}
+.TotalCount h3{
+right: 3rem;
+color: #3A3235;
+
+}
+
+
+
+
+@media (max-width: 560px){
+  
+  .Add-botton{
+  right: 2rem;
+}
+
+
+
 }
